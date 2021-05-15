@@ -45,6 +45,22 @@ class ViewController: UIViewController {
         ])
         
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        print("ViewWillAppear")
+        
+    }
+    
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        print("viewDidAppear")
+        
+//        tableView.reloadSections([0], with: .none)
+    }
 
 }
 
@@ -84,10 +100,10 @@ extension ViewController : UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         if section == 0 {
-            return 2
+            return 1
         }
         
-        return 5
+        return 0
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
@@ -104,9 +120,12 @@ extension ViewController : UITableViewDataSource {
         
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "MyCell", for: indexPath) as? MainTableViewCell else {return UITableViewCell()}
     
+        print(#fileID , #function, #line, "indexPath.section :\(indexPath.section)")
+    
+        cell.mainViewController = self
+        
         return cell
     }
-    
     
     
     

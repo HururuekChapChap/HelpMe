@@ -19,7 +19,8 @@ class SingletonManager {
     static var shared = SingletonManager()
     
     var items : [ShortCutModel] = [
-        ShortCutModel(name: "추가하기", image: UIImage(named: "swift")!)
+        ShortCutModel(name: "추가하기", image: UIImage(named: "swift")!),
+  
     ]
     
 }
@@ -31,6 +32,8 @@ class MainTableViewCell: UITableViewCell {
     @IBOutlet var collectionView: UICollectionView!
     
     let manager = SingletonManager.shared
+    
+    var mainViewController : ViewController?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -47,18 +50,49 @@ class MainTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
     }
     
-    func settingCollectionView(){
-        
-    }
-    
 }
 
 extension MainTableViewCell : UICollectionViewDelegate{
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print("collectoin selected : \(indexPath.item)")
+        
+//        manager.items.append(ShortCutModel(name: "바로가기", image: UIImage(named: "swift")!))
+        
+//        collectionView.reloadData()
+        
+        guard let vc = mainViewController else {return}
+//        vc.present(TestViewController(), animated: true, completion: nil)
+        
+        let inputView = TestViewController()
+        inputView.callBack = {
+            collectionView.reloadData()
+        }
+        
+        vc.navigationController?.pushViewController(inputView, animated: true)
     }
     
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+    
+        print("will HEllo")
+
+        print(indexPath.row , self.collectionView.indexPathsForVisibleItems.count , collectionView.indexPathsForVisibleItems)
+        
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didEndDisplaying cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        
+        print("didEnd HEllo")
+        
+        print(indexPath.row , collectionView.indexPathsForVisibleItems.count)
+//        if indexPath.row == collectionView.indexPathsForVisibleItems.count{
+//
+//                print("LAST : \(manager.items[indexPath.item])")
+//
+//                self.collectionView.reloadData()
+//            }
+        
+    }
     
 }
 

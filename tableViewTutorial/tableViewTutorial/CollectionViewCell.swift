@@ -27,10 +27,9 @@ class CollectionViewCell: UICollectionViewCell {
 //        self.imageView.image = data.image
         self.nameLabel.text = data.name
         
-//        testView.layer.cornerRadius = self.testView.frame.size.width / 2
+        testView.layer.cornerRadius = self.testView.frame.size.width / 2
 //        testView.clipsToBounds = true
         testView.backgroundColor = UIColor.gray
-        
     }
     
 //    override func layoutSubviews() {

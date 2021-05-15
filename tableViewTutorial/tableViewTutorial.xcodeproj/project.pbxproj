@@ -16,6 +16,9 @@
 		08BCB1B5264F8272002A42AE /* MainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08BCB1B3264F8272002A42AE /* MainTableViewCell.xib */; };
 		08BCB1BC264F9B3B002A42AE /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BCB1BA264F9B3B002A42AE /* CollectionViewCell.swift */; };
 		08BCB1BD264F9B3B002A42AE /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08BCB1BB264F9B3B002A42AE /* CollectionViewCell.xib */; };
+		08BCB1C4264FFEBA002A42AE /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BCB1C3264FFEBA002A42AE /* SecondViewController.swift */; };
+		08BCB1CC26501BF5002A42AE /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BCB1CA26501BF5002A42AE /* TestViewController.swift */; };
+		08BCB1CD26501BF5002A42AE /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08BCB1CB26501BF5002A42AE /* TestViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		08BCB1B3264F8272002A42AE /* MainTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainTableViewCell.xib; sourceTree = "<group>"; };
 		08BCB1BA264F9B3B002A42AE /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		08BCB1BB264F9B3B002A42AE /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		08BCB1C3264FFEBA002A42AE /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		08BCB1CA26501BF5002A42AE /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		08BCB1CB26501BF5002A42AE /* TestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,9 +75,12 @@
 				08BCB1A4264F776E002A42AE /* LaunchScreen.storyboard */,
 				08BCB1A7264F776E002A42AE /* Info.plist */,
 				08BCB1B2264F8272002A42AE /* MainTableViewCell.swift */,
+				08BCB1C3264FFEBA002A42AE /* SecondViewController.swift */,
 				08BCB1B3264F8272002A42AE /* MainTableViewCell.xib */,
 				08BCB1BA264F9B3B002A42AE /* CollectionViewCell.swift */,
 				08BCB1BB264F9B3B002A42AE /* CollectionViewCell.xib */,
+				08BCB1CA26501BF5002A42AE /* TestViewController.swift */,
+				08BCB1CB26501BF5002A42AE /* TestViewController.xib */,
 			);
 			path = tableViewTutorial;
 			sourceTree = "<group>";
@@ -137,6 +146,7 @@
 				08BCB1A3264F776E002A42AE /* Assets.xcassets in Resources */,
 				08BCB1B5264F8272002A42AE /* MainTableViewCell.xib in Resources */,
 				08BCB1A1264F7755002A42AE /* Main.storyboard in Resources */,
+				08BCB1CD26501BF5002A42AE /* TestViewController.xib in Resources */,
 				08BCB1BD264F9B3B002A42AE /* CollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -151,6 +161,8 @@
 				08BCB1BC264F9B3B002A42AE /* CollectionViewCell.swift in Sources */,
 				08BCB19E264F7755002A42AE /* ViewController.swift in Sources */,
 				08BCB1B4264F8272002A42AE /* MainTableViewCell.swift in Sources */,
+				08BCB1C4264FFEBA002A42AE /* SecondViewController.swift in Sources */,
+				08BCB1CC26501BF5002A42AE /* TestViewController.swift in Sources */,
 				08BCB19A264F7755002A42AE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
